@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase.mt_rfq_confirmed" model="mail.message.subtype">
+        <field name="name">Purchase Order confirmed</field>
+        <field name="default" eval="False" />
+        <field name="res_model">purchase.order</field>
+    </record>
+</odoo>

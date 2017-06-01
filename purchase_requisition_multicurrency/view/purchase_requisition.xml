@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_purchase_requisition_form_multicurrency">
+        <field name="name">purchase.requisition.form.inherit</field>
+        <field name="model">purchase.requisition</field>
+        <field name="inherit_id"
+            ref="purchase_requisition.view_purchase_requisition_form" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="pricelist_id" />
+                <field name="currency_id" />
+                <field name="date_exchange_rate" />
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
